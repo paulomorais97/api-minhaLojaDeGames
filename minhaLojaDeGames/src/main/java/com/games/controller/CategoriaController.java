@@ -41,7 +41,8 @@ public class CategoriaController {
 	public ResponseEntity<List<Categoria>> findByDescricaoCategoria(@PathVariable String categoria) {
 		return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(categoria)); 
 	}
-
+	
+	//RequestBody 
 	@PostMapping
 	public ResponseEntity<Categoria> postCategoria(@RequestBody Categoria categoria) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
