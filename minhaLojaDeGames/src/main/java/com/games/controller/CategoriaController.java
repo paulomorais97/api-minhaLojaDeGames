@@ -21,7 +21,7 @@ import com.games.repository.CategoriaRepository;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/categoria")
-public class CategoriaController {
+public class CategoriaController {	
 
 	@Autowired
 	private CategoriaRepository repository;
